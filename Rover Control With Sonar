@@ -1,3 +1,8 @@
+///////////////////////////////////////////Rover Control With Sonar/////////////////////////////////////////////////////////
+////////////////////////////////////Arbitrary Values Selected For Steps, Motor Specs Unknown///////////////////////////////
+
+
+
 #include <Stepper.h>
 const int stepsPerRev = 180;                                 //steps per full turn of motor shaft
 Stepper motorOne = Stepper(stepsPerRev, 5, 6, 7, 8);       //initialize an object of stepper class
@@ -5,7 +10,7 @@ Stepper motorTwo = Stepper(stepsPerRev, 9, 10, 11, 12);       //initialize an ob
 int dur;
 int arrLength = 0;
 
-int distanceTravelled[5];
+int distanceTravelled[];
 int startingCoordinates = 0;                      //0 = North, 1 = East, 2 = South, 3 = West
 
 int stepCountOne = 0;
